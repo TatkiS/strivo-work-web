@@ -1,0 +1,25 @@
+<svg width="400" height="480" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&amp;display=swap');
+      .word-main { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+      .word-sub  { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; font-weight: 300; }
+    </style>
+    <linearGradient id="arrowGrad" x1="90" y1="230" x2="300" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F1B2D"/>
+      <stop offset="100%" stop-color="#12B981"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="118" y="150" width="34" height="90" rx="8" fill="#0F1B2D"/>
+  <rect x="178" y="120" width="34" height="120" rx="8" fill="#0F1B2D"/>
+  <rect x="238" y="90" width="34" height="150" rx="8" fill="#0F1B2D"/>
+
+  <polyline points="95,205 158,150 208,175 285,70"
+            fill="none" stroke="url(#arrowGrad)" stroke-width="12"
+            stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="285,70 250,78 278,104" fill="#12B981"/>
+
+  <text x="200" y="330" text-anchor="middle" class="word-main" font-size="64" fill="#0F1B2D" letter-spacing="2">STRIVO</text>
+  <text x="200" y="372" text-anchor="middle" class="word-sub" font-size="30" fill="#12B981" letter-spacing="10">WORK</text>
+</svg>
