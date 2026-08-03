@@ -6,140 +6,209 @@
 <title>STRIVO Work s.r.o. | Будівельна компанія з власними працівниками</title>
 <meta name="description" content="STRIVO Work s.r.o. — празька будівельна компанія. Самі знаходимо об'єкти та виконуємо їх власною, офіційно оформленою командою.">
 <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="cs" href="https://strivowork.cz/cs/">
+<link rel="alternate" hreflang="uk" href="https://strivowork.cz/uk/">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="header-inner container">
-    <a href="#top" class="brand">
-      <img src="../assets/img/logo.svg" alt="Логотип STRIVO Work">
-      <span class="name">STRIVO <span>Work</span></span>
+  <div class="container nav-wrap">
+    <a href="#top" class="brand" aria-label="STRIVO Work">
+      <img src="../assets/img/logo.svg" alt="STRIVO Work">
     </a>
-    <nav>
-      <ul>
-        <li><a href="#pro-nas">Про нас</a></li>
-        <li><a href="#poslugy">Послуги</a></li>
-        <li><a href="#kontakt">Контакти</a></li>
-      </ul>
+    <nav class="main-nav">
+      <a href="#poslugy">Послуги</a>
+      <a href="#pro-nas">Про нас</a>
+      <a href="#referentsii">Роботи</a>
+      <a href="#kontakt">Контакти</a>
     </nav>
-    <div style="display:flex; align-items:center; gap:16px;">
+    <div class="header-actions">
       <div class="lang-switch">
         <a href="../cs/">CZ</a>
         <a href="../uk/" class="active">UA</a>
       </div>
+      <a href="#kontakt" class="btn btn-primary" style="display:none" id="headerCta">Заявка</a>
+      <button class="hamburger" aria-label="Меню" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
+  </div>
+  <div class="container mobile-nav">
+    <a href="#poslugy">Послуги</a>
+    <a href="#pro-nas">Про нас</a>
+    <a href="#referentsii">Роботи</a>
+    <a href="#kontakt">Контакти</a>
   </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="container">
-    <span class="eyebrow">Кадрова агенція для будівництва</span>
-    <h1>Будівельна компанія, що покладається на <em>власних людей</em></h1>
-    <p class="lead">STRIVO Work офіційно працевлаштовує людей, знаходить будівельні об'єкти та виконує роботи власною командою — з трудовими договорами й повною сплатою податків.</p>
-    <a href="#kontakt" class="btn btn-primary">Шукаємо працівників</a>
-    <a href="#poslugy" class="btn btn-outline">Чим займаємось</a>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          Прага 2 · ІЧО 23621168
+        </div>
+        <h1>Будуємо власною командою, від фундаменту до здачі</h1>
+        <p class="lead">STRIVO Work s.r.o. офіційно працевлаштовує людей і виконує будівельні замовлення у Празі та по всій Чехії — з трудовими договорами й повною сплатою податків.</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Безкоштовна заявка</a>
+          <a href="#poslugy" class="btn btn-ghost">Наші послуги</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="../assets/img/logo.svg" alt="">
+        <div class="hero-stat">
+          <strong>s.r.o.</strong>
+          <span>Зареєстрована компанія, DIČ CZ23621168</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="stats">
-      <div class="stat"><div class="num">50+</div><div class="label">працівників у команді</div></div>
-      <div class="stat"><div class="num">15+</div><div class="label">реалізованих об'єктів</div></div>
-      <div class="stat"><div class="num">100 %</div><div class="label">офіційне працевлаштування</div></div>
+  <section class="services-wrap reveal" id="poslugy">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Що ми робимо</div>
+        <h2>Будівельні послуги</h2>
+        <p>Виконуємо власною командою — один підрядник, чітка відповідальність, жодних неконтрольованих субпідрядників.</p>
+      </div>
+      <div class="services-list">
+        <div class="service-row">
+          <span class="service-num">01</span>
+          <div>
+            <h3>Наземне будівництво</h3>
+            <p>Зведення та реконструкція житлових і комерційних об'єктів від фундаменту до здачі.</p>
+          </div>
+          <div class="service-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        </div>
+        <div class="service-row">
+          <span class="service-num">02</span>
+          <div>
+            <h3>Реконструкція та ремонт</h3>
+            <p>Модернізація та ремонт наявних будівель, квартир і комерційних приміщень.</p>
+          </div>
+          <div class="service-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        </div>
+        <div class="service-row">
+          <span class="service-num">03</span>
+          <div>
+            <h3>Фасади та утеплення</h3>
+            <p>Утеплення, штукатурка та обробка фасадів з тривалим терміном служби.</p>
+          </div>
+          <div class="service-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        </div>
+        <div class="service-row">
+          <span class="service-num">04</span>
+          <div>
+            <h3>Земляні та підготовчі роботи</h3>
+            <p>Земляні роботи, планування території та підготовка майданчика перед початком будівництва.</p>
+          </div>
+          <div class="service-arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="poslugy">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Що ми робимо</span>
-      <h2>Будуємо власними силами, від об'єкта до здачі</h2>
-      <p>Самі знаходимо будівельні об'єкти і виконуємо роботи власною, офіційно оформленою командою.</p>
-    </div>
-    <div class="grid">
-      <div class="card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12B981" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
-        <h3>Реалізація об'єктів</h3>
-        <p>Знаходимо та беремо будівельні замовлення в Празі та по всій Чехії, які виконуємо від початку до кінця власною командою.</p>
+  <section id="pro-nas" class="reveal">
+    <div class="container about-grid">
+      <div>
+        <div class="section-tag">Хто ми</div>
+        <h2>Про компанію STRIVO Work</h2>
+        <div class="about-facts">
+          <div class="fact-card"><strong>23621168</strong><span>ІЧО</span></div>
+          <div class="fact-card"><strong>CZ23621168</strong><span>DIČ (ПДВ)</span></div>
+          <div class="fact-card"><strong>15 000 Kč</strong><span>Статутний капітал</span></div>
+          <div class="fact-card"><strong>Прага 2</strong><span>Місцезнаходження</span></div>
+        </div>
       </div>
-      <div class="card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12B981" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Офіційне працевлаштування</h3>
-        <p>Приймаємо працівників у штат за трудовим договором, з повною сплатою соціального та медичного страхування.</p>
-      </div>
-      <div class="card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#12B981" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h2"/></svg></div>
-        <h3>Документація та безпека</h3>
-        <p>Ведемо всю документацію, облік робочого часу та стежимо за безпекою праці на кожному об'єкті.</p>
+      <div class="about-copy">
+        <p>STRIVO Work s.r.o. — будівельна компанія з місцезнаходженням у Виноградах, Прага 2. Ми самі знаходимо будівельні замовлення і виконуємо їх власною, офіційно оформленою командою — ми не є агенцією-посередником.</p>
+        <p>Ми будуємо на довготривалих трудових відносинах, вчасно сплачуємо податки та страхові внески, а кожному працівнику гарантуємо чіткі й легальні умови.</p>
+        <p>Адреса: Záhřebská 562/41, Виногради, 120 00 Прага 2.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="pro-nas" style="background:var(--white); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
-  <div class="container about-wrap">
-    <div class="about-text">
-      <span class="eyebrow" style="text-transform:uppercase; font-weight:600; color:var(--green-dark); font-size:13px;">Про нас</span>
-      <h2>Будівельна компанія з власними працівниками</h2>
-      <p>STRIVO Work s.r.o. — празька будівельна компанія. Ми самі знаходимо будівельні замовлення і виконуємо їх власною, офіційно оформленою командою — ми не є агенцією-посередником.</p>
-      <p>Ми будуємо на довготривалих трудових відносинах, вчасно сплачуємо податки та страхові внески, а кожному працівнику гарантуємо чіткі й легальні умови.</p>
-      <ul class="checklist">
-        <li><span class="dot">✓</span> Власні працівники з трудовим договором</li>
-        <li><span class="dot">✓</span> Повна сплата податків, соціального та медичного страхування</li>
-        <li><span class="dot">✓</span> Виконання об'єктів від А до Я власними силами</li>
-      </ul>
+  <section id="referentsii" class="reveal" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Наші роботи</div>
+        <h2>Портфоліо</h2>
+        <p>Фотографії виконаних проєктів будуть додані найближчим часом.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Готується</span></div>
+        <div class="gallery-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Готується</span></div>
+        <div class="gallery-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Готується</span></div>
+      </div>
     </div>
-    <div class="panel">
-      <div class="big-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#12B981" stroke-width="1.5"><path d="M12 2l9 4.5v9L12 20l-9-4.5v-9L12 2z"/><path d="M12 22V12M21 6.5L12 12M3 6.5L12 12"/></svg></div>
-      <h3>Ростемо разом із нашими людьми</h3>
-      <p>Кожне нове замовлення і кожен новий працівник рухають компанію вперед. Тому ми інвестуємо в людей, документацію та процеси так само, як і в саме будівництво.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="kontakt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Контакти</span>
-      <h2>Шукаєте роботу, чи маєте будівельний об'єкт?</h2>
-      <p>Напишіть нам, і ми відповімо протягом 24 годин.</p>
+  <section class="reveal">
+    <div class="cta-band">
+      <h2>Маєте будівельний об'єкт, чи шукаєте роботу?</h2>
+      <a href="#kontakt" class="btn btn-primary">Зв'язатися з нами</a>
     </div>
-    <div class="contact-wrap">
-      <div class="contact-card">
-        <div class="row"><div><div class="label">Компанія</div><div class="value">STRIVO Work s.r.o.</div></div></div>
-        <div class="row"><div><div class="label">Адреса</div><div class="value">Záhřebská 562/41, Vinohrady, 120 00 Praha 2</div></div></div>
-        <div class="row"><div><div class="label">IČO (код компанії)</div><div class="value">23621168</div></div></div>
-        <div class="row"><div><div class="label">DIČ (ПДВ)</div><div class="value">CZ23621168</div></div></div>
-        <hr>
-        <div class="row"><div><div class="label">E-mail</div><div class="value">info@strivowork.cz</div></div></div>
-        <div class="row"><div><div class="label">Телефон</div><div class="value">+420 773 085 604</div></div></div>
+  </section>
+
+  <section id="kontakt" class="reveal">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Зв'яжіться з нами</div>
+        <h3>Контактні дані</h3>
+        <ul class="contact-list">
+          <li>
+            <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><strong>Адреса</strong><span>Záhřebská 562/41, Виногради, 120 00 Прага 2</span></div>
+          </li>
+          <li>
+            <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18M8 3v4"/></svg></div>
+            <div><strong>ІЧО / DIČ</strong><span>23621168 / CZ23621168</span></div>
+          </li>
+          <li>
+            <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div><strong>Телефон</strong><span>+420 773 085 604</span></div>
+          </li>
+          <li>
+            <div class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+            <div><strong>Ел. пошта</strong><span>info@strivowork.cz</span></div>
+          </li>
+        </ul>
       </div>
-      <div class="contact-card">
-        <form class="contact-form" action="mailto:info@strivowork.cz" method="post" enctype="text/plain">
-          <input type="text" name="name" placeholder="Ім'я та прізвище" required>
-          <input type="email" name="email" placeholder="E-mail" required>
-          <input type="text" name="company" placeholder="Компанія (необов'язково, якщо є об'єкт)">
-          <textarea name="message" placeholder="Напишіть, чи шукаєте роботу, чи маєте будівельний об'єкт" required></textarea>
-          <button type="submit" class="btn btn-primary">Надіслати запит</button>
-        </form>
-      </div>
+      <form class="contact-form" action="mailto:info@strivowork.cz" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="name">Ім'я та прізвище</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="company">Компанія (необов'язково, якщо є об'єкт)</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div class="field">
+          <label for="msg">Повідомлення</label>
+          <textarea id="msg" name="message" required placeholder="Напишіть, чи шукаєте роботу, чи маєте будівельний об'єкт"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Надіслати заявку</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
-  <div class="container footer-inner">
+  <div class="container footer-grid">
     <div class="brand">
-      <div class="name">STRIVO <span>Work</span></div>
-      <p class="footer-legal">STRIVO Work s.r.o. · IČO 23621168 · Záhřebská 562/41, 120 00 Praha 2</p>
+      <img src="../assets/img/logo.svg" alt="STRIVO Work">
     </div>
-    <div class="lang-switch">
-      <a href="../cs/">Čeština</a>
-      <a href="../uk/" class="active">Українська</a>
-    </div>
+    <p class="footer-legal">© <span id="year"></span> STRIVO Work s.r.o. · ІЧО 23621168 · Прага 2</p>
   </div>
-  <div class="footer-bottom container">&copy; <span id="year"></span> STRIVO Work s.r.o. Усі права захищено.</div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
