@@ -32,7 +32,8 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:84px}
+html{-webkit-text-size-adjust:none;scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:hidden}
+body{overflow-x:hidden}
 body{font-family:var(--font-body);font-size:var(--text-base);color:var(--text);background:var(--bg);line-height:1.65}
 img,svg{display:block;max-width:100%}
 h1,h2,h3{font-family:var(--font-display);line-height:1.12;text-wrap:balance;color:var(--navy);font-weight:600}
@@ -66,6 +67,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(247,247,246,.9);backdrop
 
 .hero{padding:0}
 .hero-photo{position:relative;min-height:560px;display:flex;align-items:center;overflow:hidden}
+@media (max-width:700px){.hero-photo{min-height:auto;padding-top:48px}}
 .hero-photo img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,27,42,.92) 0%,rgba(14,27,42,.75) 40%,rgba(14,27,42,.35) 75%,rgba(14,27,42,.15) 100%)}
 .hero-inner{position:relative;z-index:2;padding-block:clamp(var(--sp-16),9vw,var(--sp-24))}
@@ -203,16 +205,18 @@ footer{border-top:1px solid var(--divider);padding-block:var(--sp-10);background
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
 .reveal.in{opacity:1;transform:none}
 
-@media (max-width:860px){
+@media (max-width:900px){
   .hero-inner .container{display:block}
   .hero-cards{max-width:100%;margin-left:0;flex-direction:row;flex-wrap:wrap}
   .hero-card{flex:1 1 220px}
   .about-grid,.contact-grid{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .main-nav{display:none}
   .hamburger{display:flex}
   .process-step::after{display:none}
   .cta-band{flex-direction:column;text-align:center}
+}
+@media (max-width:560px){
+  .header-actions .btn-primary{display:none}
 }
 @media (max-width:480px){
   .gallery-grid{grid-template-columns:1fr}
