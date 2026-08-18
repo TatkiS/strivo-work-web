@@ -13,6 +13,46 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // AJAX form submission (Formspree) with inline success/error message
+  var forms = document.querySelectorAll('.contact-form, .footer-form');
+  forms.forEach(function (form) {
+    var msgBox = document.createElement('div');
+    msgBox.className = 'form-msg';
+    form.appendChild(msgBox);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '...'; }
+      msgBox.className = 'form-msg';
+      msgBox.textContent = '';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          form.reset();
+          msgBox.className = 'form-msg success';
+          msgBox.textContent = form.classList.contains('contact-form')
+            ? (document.documentElement.lang === 'uk' ? 'Дякуємо! Ваше повідомлення надіслано, скоро зв\'яжемося.' : 'Děkujeme! Zpráva byla odeslána, brzy se ozveme.')
+            : (document.documentElement.lang === 'uk' ? 'Дякуємо! Повідомлення надіслано.' : 'Děkujeme! Zpráva byla odeslána.');
+        } else {
+          throw new Error('Submit failed');
+        }
+      }).catch(function () {
+        msgBox.className = 'form-msg error';
+        msgBox.textContent = document.documentElement.lang === 'uk'
+          ? 'Щось пішло не так. Спробуйте, будь ласка, ще раз або зателефонуйте нам.'
+          : 'Něco se pokazilo. Zkuste to prosím znovu, nebo nám zavolejte.';
+      }).finally(function () {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+      });
+    });
+  });
+
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
     var io = new IntersectionObserver(function (entries) {
