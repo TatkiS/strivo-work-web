@@ -1,0 +1,18 @@
+<svg width="400" height="480" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&amp;display=swap');
+      .word-main { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; font-weight: 800; }
+      .word-sub  { font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect x="123" y="155" width="36" height="48" rx="3" fill="#1B2A38"/>
+  <rect x="168" y="130" width="36" height="73" rx="3" fill="#1B2A38"/>
+  <rect x="214" y="115" width="36" height="88" rx="3" fill="#1B2A38"/>
+
+  <path d="M276,60 L236,68 L248,78 L210,115 L185,93 L123,150 L123,172 L185,116 L209,138 L259,91 L270,101 Z" fill="#1B2A38" stroke="#F7F7F6" stroke-width="5" stroke-linejoin="round" paint-order="stroke fill"/>
+
+  <text x="200" y="270" text-anchor="middle" class="word-main" font-size="64" fill="#1B2A38" letter-spacing="2">STRIVO</text>
+  <text x="200" y="314" text-anchor="middle" class="word-sub" font-size="34" fill="#1B2A38" letter-spacing="1">Work</text>
+</svg>
