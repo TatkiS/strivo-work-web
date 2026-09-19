@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://strivowork.cz/sitemap.xml
-google-site-verification=lAdI9-xHVKaUXLipca2bvDcUFuhvnmHLk6ODuwIcXqo
